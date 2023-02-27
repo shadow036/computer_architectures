@@ -7,29 +7,6 @@ The matrix is cut by rows and implemented by the array XFIELD. Write an 8086 pro
 a       c
     *
 d       b
-Please observe/comply with the following
-    • It is mandatory to cut the matrix by rows.
-    • In your solution, please provide the declaration of XFIELD and the code, together with a short description of the algorithm used and significant comments to the code and instructions.
-    • It is guaranteed that XMATR is compliant with the requirements written above.
-    • As this is an assembly program, please do NOT design an algorithm which is suitable to a high-level language approach,
-    but strongly focus on the cut by rows of the matrix and its related properties (= refer to XFIELD and “do not use” the original i and j).
-    • ANY (EVEN PARTIAL) BRUTE FORCE APPROACH IS NOT ACCEPTABLE. Any high-level-language-like approach is discouraged; please look at the array implementation!
-    • DO NOT WRITE A GENERAL-PURPOSE PROGRAM, BUT A SPECIFIC ONE TO SOLVE  THIS PROBLEM.
-Example of Matrix XMATR
-“0”	“0”	“0”	“0”	“0”	“0”	“0”	“0”
-“0”	“5”	“2”	“3”	“4”	“5”	“7”	“0”
-“0”	“4”	“2”	“2”	“2”	“2”	“2”	“0”
-“0”	“6”	“5”	“4”	“9”	“8”	“9”	“0”
-“0”	“7”	“4”	“1”	“2”	“4”	“7”	“0”
-“0”	“9”	“9”	“9”	“9”	“9”	“9”	“0”
-“0”	“4”	“5”	“6”	“7”	“6”	“5”	“0”
-“0”	“0”	“0”	“0”	“0”	“0”	“0”	“0”
-XFIELD = “0”, “0”, “0”, “0”, “0”, “0”, “0”, “0”, “0”, “5”, “2”, “3”, “4”, “5”, “7”, “0”, “0”, “4”, “2”, “2”, “2”, “2”, “2”, “0”, “0”,
-“6”, “5”, “4”, “9”, “8”, “9”, “0”, “0”, “7”, “4”, “1”, “2”, “4”, “7”, “0”, “0”, “9”, “9”, “9”, “9”, “9”, “9”, “0”, “0”, “4”, “5”, “6”, “7”, “6”, “5”, “0”, “0”, “0”, “0”, “0”, “0”, “0”, “0”, “0”
-If k= 10 then the program should return (0+2+0+4) = 6
-If k= 7 then the program should return 0
-If k= 23 then the program should return 0
-If k= 21 then the program should return (4+9+7+9) = 29
 
 ### Question 4
 Write the algoritm196 subroutine, which receives in input a 32-bit unsigned number M. If M (in the base-10 representation) is palindromic,
