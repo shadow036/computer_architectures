@@ -1,4 +1,4 @@
-### Question 3 \
+### Question 3
 An 8 x 8 matrix XMATR of bytes stores ASCII CHARACTER “0” digits in its border cells and “1” to “9” ASCII CHARACTER digits in all the other internal cells.
 The matrix is cut by rows and implemented by the array XFIELD. Write an 8086 program which, having received an index k of XFIELD, computes a value in XRES DB ? as follows:
     • If XFIELD[k] is a border cell (i.e. if XFIELD[k]=”0”), then the program returns the value 0 in XRES
@@ -31,7 +31,7 @@ If k= 7 then the program should return 0
 If k= 23 then the program should return 0
 If k= 21 then the program should return (4+9+7+9) = 29
 
-### Question 4 \
+### Question 4
 Write the algoritm196 subroutine, which receives in input a 32-bit unsigned number M. If M (in the base-10 representation) is palindromic,
 the function returns 0. A palindromic number is a number (such as 16461) that remains the same when its digits are reversed.
 If M is not palindromic, the function builds a new number N by reversing the digits of M. Then, the function returns M + N.
@@ -55,7 +55,7 @@ you can build N by repeatedly multiplying the temporary value of N by 10 and add
     • fifth iteration: N = 1662 * 10 + 1 = 16621
 You can assume that the computation never generates an overflow.
 
-### Question 5 \
+### Question 5
 Implement the handler for the supervisor call 100.
 The handler repeatedly calls the algoritm196 subroutine developed in the previous exercise, passing the value stored in r0. The loop ends when either one of the following conditions occur:
     • the algoritm196 subroutine returns 0: it means that a palindromic number was reached. In this case, the handler sets r5 equal to 1 and ends.
